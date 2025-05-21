@@ -37,8 +37,8 @@ def usar_chat():
             messages=[{"role": "user", "content": prompt}],
         )
 
-        #respuesta = completion.choices[0].message.content
-        respuesta = completion.choices[0].message
+        respuesta = completion.choices[0].message.content
+        #respuesta = completion.choices[0].message  primero con github
         print(f"🤖 IA: {respuesta}\n")
 
 
